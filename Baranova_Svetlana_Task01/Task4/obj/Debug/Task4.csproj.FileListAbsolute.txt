@@ -1,0 +1,6 @@
+D:\Baranova\Baranova_Svetlana_Task01\Task4\bin\Debug\Task4.exe.config
+D:\Baranova\Baranova_Svetlana_Task01\Task4\bin\Debug\Task4.exe
+D:\Baranova\Baranova_Svetlana_Task01\Task4\bin\Debug\Task4.pdb
+D:\Baranova\Baranova_Svetlana_Task01\Task4\obj\Debug\Task4.csprojResolveAssemblyReference.cache
+D:\Baranova\Baranova_Svetlana_Task01\Task4\obj\Debug\Task4.exe
+D:\Baranova\Baranova_Svetlana_Task01\Task4\obj\Debug\Task4.pdb

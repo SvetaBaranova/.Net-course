@@ -1,0 +1,5 @@
+D:\Baranova\Baranova_Svetlana_Task01\Task2\bin\Debug\Task2.exe.config
+D:\Baranova\Baranova_Svetlana_Task01\Task2\bin\Debug\Task2.exe
+D:\Baranova\Baranova_Svetlana_Task01\Task2\bin\Debug\Task2.pdb
+D:\Baranova\Baranova_Svetlana_Task01\Task2\obj\Debug\Task2.exe
+D:\Baranova\Baranova_Svetlana_Task01\Task2\obj\Debug\Task2.pdb
