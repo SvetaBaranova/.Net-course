@@ -1,0 +1,5 @@
+D:\Baranova Net Course\Baranova-Net-course\Baranova_Svetlana_Task03\Task2\bin\Debug\Task2.exe.config
+D:\Baranova Net Course\Baranova-Net-course\Baranova_Svetlana_Task03\Task2\bin\Debug\Task2.exe
+D:\Baranova Net Course\Baranova-Net-course\Baranova_Svetlana_Task03\Task2\bin\Debug\Task2.pdb
+D:\Baranova Net Course\Baranova-Net-course\Baranova_Svetlana_Task03\Task2\obj\Debug\Task2.exe
+D:\Baranova Net Course\Baranova-Net-course\Baranova_Svetlana_Task03\Task2\obj\Debug\Task2.pdb

@@ -1,0 +1,6 @@
+D:\Baranova Net Course\Baranova-Net-course\Baranova_Svetlana_Task03\Task1\bin\Debug\Task1.exe.config
+D:\Baranova Net Course\Baranova-Net-course\Baranova_Svetlana_Task03\Task1\bin\Debug\Task1.exe
+D:\Baranova Net Course\Baranova-Net-course\Baranova_Svetlana_Task03\Task1\bin\Debug\Task1.pdb
+D:\Baranova Net Course\Baranova-Net-course\Baranova_Svetlana_Task03\Task1\obj\Debug\Task1.csprojResolveAssemblyReference.cache
+D:\Baranova Net Course\Baranova-Net-course\Baranova_Svetlana_Task03\Task1\obj\Debug\Task1.exe
+D:\Baranova Net Course\Baranova-Net-course\Baranova_Svetlana_Task03\Task1\obj\Debug\Task1.pdb
