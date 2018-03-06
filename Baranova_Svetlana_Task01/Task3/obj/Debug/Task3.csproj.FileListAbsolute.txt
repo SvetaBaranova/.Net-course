@@ -3,3 +3,6 @@ D:\Baranova\Baranova_Svetlana_Task01\Task3\bin\Debug\Task3.exe
 D:\Baranova\Baranova_Svetlana_Task01\Task3\bin\Debug\Task3.pdb
 D:\Baranova\Baranova_Svetlana_Task01\Task3\obj\Debug\Task3.exe
 D:\Baranova\Baranova_Svetlana_Task01\Task3\obj\Debug\Task3.pdb
+D:\Baranova Net Course\Baranova-Net-course\Baranova_Svetlana_Task01\Task3\bin\Debug\Task3.exe.config
+D:\Baranova Net Course\Baranova-Net-course\Baranova_Svetlana_Task01\Task3\obj\Debug\Task3.exe
+D:\Baranova Net Course\Baranova-Net-course\Baranova_Svetlana_Task01\Task3\obj\Debug\Task3.pdb
