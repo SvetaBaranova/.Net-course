@@ -15,7 +15,7 @@ namespace Task1
             s = Console.ReadLine();
             double countWord = 0;
             int countChar = 0;
-            string[] mas = s.Split(' ');
+            string[] mas = s.Split(new char[] { ' '}, StringSplitOptions.RemoveEmptyEntries);
             char[] word = s.ToCharArray();
             for (int i = 0; i < word.Length; i++)
             {
