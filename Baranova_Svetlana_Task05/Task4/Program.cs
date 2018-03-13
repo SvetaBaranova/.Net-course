@@ -15,6 +15,7 @@ namespace Task4
             Console.WriteLine($"+  {str+str1}");
             Console.WriteLine($"-  {str - str1}");
             Console.WriteLine($"==  {str == str1}");
+            Console.WriteLine($"Equals  {str.Equals(str1)}");
             Console.ReadKey();
         }
     }

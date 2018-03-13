@@ -9,25 +9,12 @@ namespace Task4
     class MyString
     {
         private char[] line;
+
         public MyString(char[] line)
         {
-            Line = line;
+            this.line = line;
         }
-        public char[] Line
-        {
-            get
-            {
-                return line;
-            }
-            set
-            {
-                if (value.Length == 0 || value == null)
-                {
-                    throw new ArgumentException("String can't be empty");
-                }
-                line = value.ToArray();
-            }
-        }
+
         public static MyString operator + (MyString line1, MyString line2)
         {
             string lineOne = line1.ToString();
@@ -35,57 +22,40 @@ namespace Task4
             lineOne += lineTwo;
             return new MyString (lineOne.ToArray());
         }
+
         public static MyString operator - (MyString line1, MyString line2)
         {
             string lineOne = line1.ToString();
             string lineTwo = line2.ToString();
-            lineOne = lineOne.Replace(lineTwo, "");
+            lineOne = lineOne.Replace(lineTwo, string.Empty);
             return new MyString(lineOne.ToArray());
         }
+
         public static bool operator == (MyString line1, MyString line2)
         {
-            if (line1.Line.Length != line2.Line.Length)
-            {
-                return false;
-            }
-            else
-            {
-                bool flag = false;
-                for (int i = 0; i < line1.Line.Length; i++)
-                {
-                    if (line1.Line[i] == line2.Line[i])
-                    {
-                        flag = true;
-                    }
-                    else
-                    {
-                        flag = false;
-                    }
-                }
-                return flag;
-            }
+            string lineOne = line1.ToString();
+            string lineTwo = line2.ToString();
+            return lineOne.Equals(lineTwo);
         }
+
         public static bool operator != (MyString line1, MyString line2)
         {
-            if (line1.Line.Length != line2.Line.Length)
-            {
-                return true;
-            }
-            else
-            {
-                for (int i = 0; i < line1.Line.Length; i++)
-                {
-                    if (line1.Line[i] != line2.Line[i])
-                    {
-                        return true;
-                    }
-                }
-                return false;
-            }
+            return !(line1 == line2);
         }
+
+
         public override string ToString()
         {
-            return new string (Line);
+            return new string(line);
+        }
+        public override bool Equals(object obj)
+        {
+            var @str = obj as MyString;
+            if (@str != null)
+            {
+                return @str == this;
+            }
+            return false;
         }
     }
 }

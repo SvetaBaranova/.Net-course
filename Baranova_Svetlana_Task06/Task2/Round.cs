@@ -11,6 +11,16 @@ namespace Task2
         private double radius;
         private double coordinateX;
         private double coordinateY;
+
+        public Round() { }
+
+        public Round(double x, double y, double r)
+        {
+            CoordinateX = x;
+            CoordinateY = y;
+            Radius = r;
+        }
+
         public double Radius
         {
             get
@@ -63,6 +73,10 @@ namespace Task2
             {
                 return 3.14 * Radius * Radius;
             }
+        }
+        static double AreaRound(double rad)
+        {
+            return Math.PI * rad * rad;
         }
     }
 }

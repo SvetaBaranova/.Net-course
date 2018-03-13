@@ -12,6 +12,14 @@ namespace Task1
         private string surname;
         private DateTime birthDay;
 
+        public User(string n, DateTime b, string f, string o = null)
+        {
+            Name = n;
+            BirthDay = b;
+            Surname = o;
+            MiddleName = f;
+        }
+
         public string Name
         {
             get
@@ -55,12 +63,13 @@ namespace Task1
                 int age = 0;
                 if (DateTime.Today.Month>BirthDay.Month)
                 {
-                    return (DateTime.Today.Year-BirthDay.Year);
+                    age = DateTime.Today.Year-BirthDay.Year;
                 }
-                else if (DateTime.Today.Day<BirthDay.Day)
+                else
                 {
-                    return (DateTime.Today.Year - BirthDay.Year - 1);
+                    age = DateTime.Today.Year - BirthDay.Year - 1;
                 }
+                return age;
             }
         }
 
