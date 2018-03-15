@@ -11,7 +11,8 @@ namespace Task1
         private int lengthOfWork;
         private string post;
 
-        public Employee (string name, string middle, string sur, DateTime birth, int length, string p) : base(name, birth, sur, middle)
+        public Employee (string name, string middle, string sur, DateTime birth, int length, string p) : 
+            base(name, birth, sur, middle)
         {
             LengthOfWork = length;
             Post = p;
