@@ -97,7 +97,14 @@ namespace Task3
 
 		public double this[int index]
 		{
-			get { return series[index]; }
+			get
+            {
+                if (index < series.Length - 1)
+                {
+                    return series[index];
+                }
+                throw new IndexOutOfRangeException("Index have wrong value"); ;
+            }
 		}
 	}
 

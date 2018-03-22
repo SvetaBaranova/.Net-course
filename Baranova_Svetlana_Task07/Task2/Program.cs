@@ -15,7 +15,11 @@ namespace Task2
             for (int i = 0; i < 10; i++)
             {
                 Console.WriteLine(series.GetCurrent());
-                series.MoveNext();
+                if (!series.MoveNext())
+                {
+                    break;
+                }
+                
             }
         }
         static void Main(string[] args)
@@ -29,6 +33,7 @@ namespace Task2
             PrintSeries(list);
 
             ISeries my = new GeometricalProgression(1, 4);
+            Console.WriteLine("Geometrical Progression:");
             PrintSeries(my);
             Console.ReadKey();
         }

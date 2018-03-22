@@ -53,8 +53,12 @@ namespace Task2
 
 		public bool MoveNext()
 		{
-			currentIndex = currentIndex < series.Length - 1 ? currentIndex + 1 : 0;
-			return true;
+            if (currentIndex < series.Length - 1)
+            {
+                currentIndex++;
+                return true;
+            }
+			return false;
 		}
 
 		public void Reset()

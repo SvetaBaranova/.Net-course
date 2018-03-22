@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using FigureLibrary;
 using System.Drawing;
 
@@ -23,6 +19,7 @@ namespace Task1
             for(int i=0; i<4; i++)
             {
                 my[i].Draw(can);
+                Console.WriteLine();
             }
             Console.ReadKey();
         }
