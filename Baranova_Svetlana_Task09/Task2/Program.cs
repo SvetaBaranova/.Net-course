@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Task1
+namespace Task2
 {
     class Program
     {
@@ -54,6 +54,13 @@ namespace Task1
             }
             Console.WriteLine("-------");
             foreach (int el in arr)
+            {
+                Console.WriteLine(el);
+            }
+            IEnumerable<int> arrayNew = new int[5] { 2, 5, 2, 5, 2};
+            DynamicArray<int> arr1 = new DynamicArray<int>(arrayNew);
+            Console.WriteLine("-------");
+            foreach (int el in arr1)
             {
                 Console.WriteLine(el);
             }
