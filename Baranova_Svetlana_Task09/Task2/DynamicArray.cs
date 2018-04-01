@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Task2
 {
-    class DynamicArray<T> : IEnumerable where T : IComparable<T>, new()
+    class DynamicArray<T> : IEnumerable<T> where T : IComparable<T>, new()
     {
         public T[] arr;
         private int length;
@@ -31,21 +31,10 @@ namespace Task2
             Length = mas.Length;
         }
 
-        public DynamicArray(IEnumerable mas)
+        public DynamicArray(IEnumerable<T> mas)
         {
-            int count = 0;
-            foreach (T m in mas)
-            {
-                count++;
-            }
-            arr = new T[count];
-            Length = count;
-            count = 0;
-            foreach (T m in mas)
-            {
-                arr[count] = m;
-                count++;
-            }
+            arr = mas.ToArray();
+            length = arr.Length;
         }
 
         public void Add(T element)
@@ -151,14 +140,18 @@ namespace Task2
             }
         }
 
-        public IEnumerator GetEnumerator()
+        IEnumerator IEnumerable.GetEnumerator()
+        {
+            return this.GetEnumerator();
+        }
+
+        public IEnumerator<T> GetEnumerator()
         {
             for (int i = 0; i < Length; i++)
             {
                 yield return arr[i];
             }
         }
-
 
         public int Length
         {

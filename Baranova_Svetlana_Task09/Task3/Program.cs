@@ -11,10 +11,28 @@ namespace Task3
     {
         static void Main(string[] args)
         {
-            Regex rgx = new Regex("[\\s\\p{P}]+");
+            Regex rgx = new Regex("[^\\w]+");
             string str;
             str = Console.ReadLine();
+            str.Trim();
             string[] arrWord = rgx.Split(str);
+            Dictionary<string, int> word = new Dictionary<string, int>(StringComparer.CurrentCultureIgnoreCase);
+            foreach (var el in arrWord)
+            {
+                if (word.ContainsKey(el))
+                {
+                    word[el]++;
+                }
+                else
+                {
+                    word.Add(el, 1);
+                }
+            }
+            foreach (var el in word)
+            {
+                Console.WriteLine($"{el.Key} - {el.Value}");
+            }
+            Console.WriteLine("-----");
             IEnumerable < string > onlyWord = arrWord.Distinct(StringComparer.CurrentCultureIgnoreCase);
             foreach (var el in onlyWord)
             {

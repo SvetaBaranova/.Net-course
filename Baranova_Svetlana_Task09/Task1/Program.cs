@@ -11,54 +11,28 @@ namespace Task1
     {
         public static void RemoveEachSecondItem<T>(ICollection<T> list)
         {
-            T[] mas = new T[list.Count / 2];
-            int j = 0;
-            if (list.Count%2 == 0)
-            {
-                for (int i = 0; i < list.Count; i++)
-                    {
-                        if (i % 2 != 0)
-                        {
-                            mas[j] = list.ElementAt(i);
-                            j++;
-                        }
-                    }
-                for (int i = 0; i < mas.Length; i++)
-                {
-                    list.Remove(mas[i]);
-                }
-            }
-            mas = new T[(list.Count+1) / 2];
-            j = 0;
-            for (int i = 0; i < list.Count; i++)
-            {
-                if (i % 2 != 0)
-                {
-                    mas[j] = list.ElementAt(i);
-                    j++;
-                }
-            }
+            bool isEven = false;
             while (list.Count > 1)
             {
-                for (int i = 0; i < mas.Length; i++)
+                var evenElements = new List<T>();
+                foreach (var item in list)
                 {
-                    list.Remove(mas[i]);
-                }
-                mas = new T[(list.Count + 1) / 2];
-                j = 0;
-                for (int i = 0; i < list.Count; i++)
+                    if (isEven)
                     {
-                        if (i % 2 == 0)
-                        {
-                            mas[j] = list.ElementAt(i);
-                            j++;
-                        }
+                        evenElements.Add(item);
                     }
+                    isEven = !isEven;
+                }
+
+                foreach(var item in evenElements)
+                {
+                    list.Remove(item);
+                }
             }
         }
         static void Main(string[] args)
         {
-            int[] people = new int[11] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 };
+            int[] people = new int[15] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
             List<int> myList = new List<int>(people);
             LinkedList<int> myLinked = new LinkedList<int>(people);
             RemoveEachSecondItem(myList);
@@ -72,7 +46,7 @@ namespace Task1
             {
                 Console.WriteLine(i);
             }
-            string[] people1 = new string[11] { "A", "B", "C", "D", "E", "F", "G", "H", "I", "M", "N" };
+            string[] people1 = new string[12] { "A", "B", "C", "D", "E", "F", "G", "H", "I", "M", "N", "L" };
             List<string> myList1 = new List<string>(people1);
             LinkedList<string> myLinked1 = new LinkedList<string>(people1);
             RemoveEachSecondItem(myList1);
